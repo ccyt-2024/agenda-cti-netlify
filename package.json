@@ -1,0 +1,7 @@
+{
+  "name": "agenda-cti-netlify",
+  "version": "1.0.0",
+  "dependencies": {
+    "googleapis": "^133.0.0"
+  }
+}
