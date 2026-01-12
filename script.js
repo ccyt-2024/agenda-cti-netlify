@@ -14,7 +14,11 @@ fetch(ENDPOINT)
       return obj;
     });
 
-    renderActivities(activities);
+    const approvedActivities = activities.filter(
+      act => act["APROBADO"] === "SI"
+    );
+    
+    renderActivities(approvedActivities);
   })
   .catch(err => {
     document.getElementById("agenda").innerText =
